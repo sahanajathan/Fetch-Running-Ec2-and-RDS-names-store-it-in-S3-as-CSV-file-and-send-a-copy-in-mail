@@ -37,5 +37,5 @@ def handler(event, context):
                 spamwriter = csv.writer(csvfile,delimiter=',')
                 spamwriter.writerow([name])
     data = open('/tmp/' + FILE_NAME, 'r')
-    s3.upload_file('/tmp/' +FILE_NAME, BUCKET_NAME, dt+' Report.csv')
-    object_acl = s31.ObjectAcl('bucketnamet',dt+' Report.csv')
+    s3.upload_file('/tmp/' +FILE_NAME, BUCKET_NAME, dt+'Report.csv')
+    object_acl = s31.ObjectAcl('bucketnamet',dt+'Report.csv')
