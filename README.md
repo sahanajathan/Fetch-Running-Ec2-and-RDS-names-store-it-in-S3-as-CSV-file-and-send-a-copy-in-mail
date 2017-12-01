@@ -45,5 +45,6 @@ steps to achieve sending mail using node.js.
 6. upload the Zip file and run the lambda function.
 
 
-Output expected
+Output expected:
+
 Mail is sent to recepient with file attached.
